@@ -92,6 +92,8 @@ ENV/
 .vagrant
 .idea
 .idea/*
+data/*
+data/
 Data/
 Data/*
 disk.vdi
