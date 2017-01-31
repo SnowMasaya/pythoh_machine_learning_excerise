@@ -27,3 +27,5 @@ WORKDIR /home/
 
 EXPOSE 8888
 
+ENTRYPOINT ["sh", "/home/notebook.sh"]
+
