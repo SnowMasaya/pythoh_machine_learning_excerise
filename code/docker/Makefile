@@ -81,7 +81,7 @@ DOCKER_RUN_KAGGLE:=docker run --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro -
 images/% : dockerfiles/% pull
 	ln -sf $< Dockerfile
 	docker build -t $(REPO_NAME)/$(@F) .
-	#rm Dockerfile
+	rm Dockerfile
 
 environment: pull docker-compose.yml
 	$(DOCKER_COMPOSE) up -d
